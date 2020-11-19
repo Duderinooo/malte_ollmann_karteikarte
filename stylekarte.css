@@ -157,7 +157,7 @@ body{
 }
 
 .company-text {
-  font-size: 26px;
+  font-size: 23px;
   letter-spacing: 2px;
   word-spacing: 6px;
   padding-top:20px;
@@ -199,12 +199,15 @@ h3{
     padding: 20px;
     display: flex;
     flex-direction: row;
+
 }
 .features figure{
     margin: auto;
     width: 200px;
 	text-align: center;
+	
 	}
+	
 .features figure img {
     border-radius: 50%;
     width: 50px;
@@ -213,7 +216,7 @@ h3{
 	margin:0 auto;
 }
 
-figcaption{
+.features figcaption{
    font-size: 20px;
   letter-spacing: 2px;
   word-spacing: 6px;
@@ -224,4 +227,60 @@ figcaption{
   background-clip: text;
   -webkit-background-clip: text;
   text-shadow: -1px -1px 1px rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 900px) {
+    .card { 
+        width: 320px;
+			height: 180px;
+    }
+	.company-line {
+		font-size: 12px;
+		  letter-spacing: 1px;
+			word-spacing: 2px;
+			padding-top: 10px;
+			padding-bottom: 30px;
+	}
+	.company-text {
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+	.features{
+		padding:15px;
+	}
+	.features figure{
+		width: 80px;
+	}
+	.features figure img {
+    border-radius: 50%;
+    width: 30px;
+	height: 30px;
+	display:block;
+	margin:0 auto;
+}
+.features figcaption{
+   font-size: 10px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  padding-top:10px;
+  color: transparent;
+  background: url("silver.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.1);
+}
+.header{
+	padding:0;
+}
+.light {
+  position: absolute;
+  width: 166vw;
+  height: 90vh;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.5) 20%,rgba(255,255,255,0) 60%);
+  opacity: 0.2;
+  z-index: 2;
+  pointer-events: none;
+}
 }

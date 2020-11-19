@@ -90,9 +90,10 @@ body{
 	border-radius: 15px;
 }
 
-.cardlayout:hover .card{
-	transform: rotateY(180deg);
+.card.is-flipped {
+  transform: rotateY(180deg);
 }
+
 
 .cardfront,
 .cardback{
@@ -133,7 +134,6 @@ body{
   opacity: 0.4;
   z-index: 9;
   pointer-events: none;
-  overflow:hidden;
 }
 .logo {
   width: 120px;
